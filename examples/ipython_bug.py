@@ -1,12 +1,9 @@
 def works_fine():
-    a = 5
-    b = 6
-    assert(a + b == 11)
+    pass
 
 def throws_an_exception():
     a = 5
-    b = 6
-    assert(a + b == 10)
+    assert a == 4
 
 def calling_things():
     works_fine()
