@@ -8,9 +8,7 @@ root = parsed.getroot()
 data = []
 
 for elt in root.INDICATOR:
-    el_data = {}
-    for child in elt.getchildren():
-        el_data[child.tag] = child.pyval
+    el_data = {child.tag: child.pyval for child in elt.getchildren()}
     data.append(el_data)
 
 perf = DataFrame(data)
